@@ -24,7 +24,7 @@ header {
     background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
-    z-index:99;
+    z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
@@ -50,7 +50,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -99,23 +99,25 @@ footer {
 
 /* Media querie: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
-   /* Navbar styles with dropdown toggle */
-   nav {
-    position: relative;
-    display: block;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
-}
+    /* Navbar styles with dropdown toggle */
+    nav {
+        position: relative;
+        display: block;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
 
-#menu {
-    display: flex;
-}
+    #menu {
+        display: flex;
+    }
 
-#menu > li {
-    margin-left: 1rem;
-}
+    #menu>li {
+        margin-left: 1rem;
+    }
+
     header {
         padding: 0 2rem;
     }
@@ -127,5 +129,17 @@ footer {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    
+    /* Main content */
+    main{
+        /*Push main content down to accomodate larger header*/
+    margin-top: 79px;
     }
 }
