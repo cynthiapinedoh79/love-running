@@ -96,3 +96,36 @@ main {
 footer {
     background-color: orange;
 }
+
+/* Media querie: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+   /* Navbar styles with dropdown toggle */
+   nav {
+    position: relative;
+    display: block;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu > li {
+    margin-left: 1rem;
+}
+    header {
+        padding: 0 2rem;
+    }
+
+    /* Nav toggle */
+    #nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+}
